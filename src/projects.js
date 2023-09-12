@@ -18,7 +18,6 @@ function handleActiveSelection(target) {
   active.classList.remove('category--selected');
   target.classList.add('category--selected');
 }
-
 function filterProjects(filter) {
   projects.forEach((project) => {
     if (filter === 'all' || filter === project.dataset.type) {
@@ -27,6 +26,7 @@ function filterProjects(filter) {
       project.style.display = 'none';
     }
   });
+  // anim-out이 뭔지 :?
   projectsContainer.classList.add('anim-out');
   setTimeout(() => {
     projectsContainer.classList.remove('anim-out');
