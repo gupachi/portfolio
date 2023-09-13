@@ -26,7 +26,7 @@ function filterProjects(filter) {
       project.style.display = 'none';
     }
   });
-  // anim-out이 뭔지 :?
+  // project에 animation 효과를 주었다. 
   projectsContainer.classList.add('anim-out');
   setTimeout(() => {
     projectsContainer.classList.remove('anim-out');
